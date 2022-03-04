@@ -5,11 +5,11 @@ import java.util.Date;
 public class NotesRequest {
 
 	private String agency;
-	
+
 	private Date dateFrom;
-	
+
 	private Date dateTo;
-	
+
 	private String clientGuid;
 
 	public String getAgency() {

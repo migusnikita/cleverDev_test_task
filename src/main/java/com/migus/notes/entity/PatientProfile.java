@@ -8,16 +8,16 @@ public class PatientProfile extends AbstractEntity {
 
 	@Column(name = "first_name")
 	private String firstName;
-	
+
 	@Column(name = "last")
 	private String lastName;
-	
+
 	@Column(name = "old_client_guid")
 	private String oldClientGuid;
-	
+
 	@Column(name = "status_id")
 	private int statusId;
-	
+
 	@Column(name = "agency")
 	private String agency;
 

@@ -19,23 +19,26 @@ public class PatientNote extends AbstractEntity{
 	@Column(name = "created_date_time")
 	@CreatedDate
 	private Date createdDateTime;
-	
+
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "last_modified_date_time")
 	@LastModifiedDate
 	private Date lastModifiedDateTime;
-	
+
 	@JoinColumn(name = "created_by_user_id")
 	@ManyToOne
 	private CompanyUser createdByUserId;
-	
+
 	@JoinColumn(name = "last_modified_by_user_id")
 	@ManyToOne
 	private CompanyUser lastModifiedByUserId;
-	
+
 	@Column(name = "note")
 	private String note;
-	
+
+	@Column(name = "guid")
+	private String guid;
+
 	@JoinColumn(name = "patient_id")
 	@ManyToOne
 	private PatientProfile patientId;
@@ -88,9 +91,17 @@ public class PatientNote extends AbstractEntity{
 		this.patientId = patientId;
 	}
 
+	public String getGuid() {
+		return guid;
+	}
+
+	public void setGuid(String guid) {
+		this.guid = guid;
+	}
+
 	@Override
 	public String toString() {
 		return "PatientNote [createdDateTime=" + createdDateTime + ", lastModifiedDateTime=" + lastModifiedDateTime + ", createdByUserId=" + createdByUserId
-				+ ", lastModifiedByUserId=" + lastModifiedByUserId + ", note=" + note + ", patientId=" + patientId + "]";
+				+ ", lastModifiedByUserId=" + lastModifiedByUserId + ", note=" + note + ", guid=" + guid + ", patientId=" + patientId + "]";
 	}
 }

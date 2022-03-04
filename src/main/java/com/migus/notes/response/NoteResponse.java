@@ -3,19 +3,19 @@ package com.migus.notes.response;
 import java.util.Date;
 
 public class NoteResponse {
-	
+
 	private String comments;
-	
+
 	private String guid;
 
 	private Date modifiedDateTime;
-	
+
 	private String clientGuid;
 
 	private Date datetime;
-	
+
 	private String loggedUser;
-	
+
 	private Date createdDateTime;
 
 	public String getComments() {

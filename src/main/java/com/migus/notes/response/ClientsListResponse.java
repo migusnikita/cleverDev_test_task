@@ -3,7 +3,7 @@ package com.migus.notes.response;
 import java.util.List;
 
 public class ClientsListResponse {
-	
+
 	private List<ClientResponse> clients;
 
 	public List<ClientResponse> getClients() {

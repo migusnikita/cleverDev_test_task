@@ -4,79 +4,79 @@ import java.util.Date;
 
 public class ClientResponse {
 
-	private String agency;
-	
-	private String guid;
-	
-	private String firstName;
-	
-	private String lastName;
-	
-	private String status;
-	
-	private Date dob;
-	
-	private Date createdDateTime;
+    private String agency;
 
-	public String getAgency() {
-		return agency;
-	}
+    private String guid;
 
-	public void setAgency(String agency) {
-		this.agency = agency;
-	}
+    private String firstName;
 
-	public String getGuid() {
-		return guid;
-	}
+    private String lastName;
 
-	public void setGuid(String guid) {
-		this.guid = guid;
-	}
+    private String status;
 
-	public String getFirstName() {
-		return firstName;
-	}
+    private Date dob;
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    private Date createdDateTime;
 
-	public String getLastName() {
-		return lastName;
-	}
+    public String getAgency() {
+        return agency;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    public void setAgency(String agency) {
+        this.agency = agency;
+    }
 
-	public String getStatus() {
-		return status;
-	}
+    public String getGuid() {
+        return guid;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    public void setGuid(String guid) {
+        this.guid = guid;
+    }
 
-	public Date getDob() {
-		return dob;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public void setDob(Date dob) {
-		this.dob = dob;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public Date getCreatedDateTime() {
-		return createdDateTime;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public void setCreatedDateTime(Date createdDateTime) {
-		this.createdDateTime = createdDateTime;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	@Override
-	public String toString() {
-		return "ClientResponse [agency=" + agency + ", guid=" + guid + ", firstName=" + firstName + ", lastName=" + lastName + ", status=" + status + ", dob=" + dob
-				+ ", createdDateTime=" + createdDateTime + "]";
-	}
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Date getDob() {
+        return dob;
+    }
+
+    public void setDob(Date dob) {
+        this.dob = dob;
+    }
+
+    public Date getCreatedDateTime() {
+        return createdDateTime;
+    }
+
+    public void setCreatedDateTime(Date createdDateTime) {
+        this.createdDateTime = createdDateTime;
+    }
+
+    @Override
+    public String toString() {
+        return "ClientResponse [agency=" + agency + ", guid=" + guid + ", firstName=" + firstName + ", lastName=" + lastName + ", status=" + status + ", dob=" + dob
+                + ", createdDateTime=" + createdDateTime + "]";
+    }
 }
